@@ -6,11 +6,8 @@ from __future__ import\
 ###############################################################################
 ###############################################################################
 ###############################################################################
-
-
-import keras.layers
-import keras.models
-
+from tensorflow.python import keras
+from tensorflow.python.keras.engine import InputLayer
 
 from . import base
 from .relevance_based import relevance_rule as lrp_rules
@@ -113,7 +110,7 @@ class DeepTaylor(base.ReverseAnalyzerBase):
         # Layers w/o transformation
         self._add_conditional_reverse_mapping(
             lambda l: isinstance(l, (
-                keras.engine.topology.InputLayer,
+                InputLayer,
                 keras.layers.convolutional.Cropping1D,
                 keras.layers.convolutional.Cropping2D,
                 keras.layers.convolutional.Cropping3D,

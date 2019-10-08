@@ -8,13 +8,10 @@ import six
 ###############################################################################
 ###############################################################################
 
-
-import keras.backend as K
-import keras.layers
-import keras.models
 import numpy as np
 import warnings
 
+from tensorflow.python import keras
 
 from .. import layers as ilayers
 from .. import utils as iutils

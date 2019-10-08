@@ -9,18 +9,8 @@ import six
 ###############################################################################
 
 import inspect
-import keras
-import keras.backend as K
-import keras.engine.topology
-import keras.models
-import keras.layers
-import keras.layers.convolutional
-import keras.layers.core
-import keras.layers.local
-import keras.layers.noise
-import keras.layers.normalization
-import keras.layers.pooling
 
+from tensorflow.python import keras
 
 from .. import base
 from innvestigate import layers as ilayers

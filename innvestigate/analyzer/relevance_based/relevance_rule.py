@@ -8,19 +8,8 @@ from builtins import zip
 ###############################################################################
 ###############################################################################
 
-import keras
-import keras.backend as K
-import keras.engine.topology
-import keras.models
-import keras.layers
-import keras.layers.convolutional
-import keras.layers.core
-import keras.layers.local
-import keras.layers.noise
-import keras.layers.normalization
-import keras.layers.pooling
 import numpy as np
-
+from tensorflow.python import keras
 
 from innvestigate import layers as ilayers
 from innvestigate import utils as iutils

@@ -9,10 +9,8 @@ from builtins import zip
 ###############################################################################
 
 
-import keras.models
-import keras.backend as K
 import numpy as np
-
+from tensorflow.python import keras
 
 from . import base
 from .. import layers as ilayers
